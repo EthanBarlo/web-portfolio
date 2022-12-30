@@ -9,10 +9,10 @@
    ];
 </script>
 
-<div class="bg-lavender-100 p-8">
-   <div class="flex flex-row items-start justify-start relative max-w-2xl mx-auto">
+<div class="bg-lavender-100 p-6 pl-2">
+   <div class="flex flex-row items-start justify-start relative max-w-3xl mx-auto">
       <div class="w-12 h-[480px] sticky top-[calc(50%-240px)]">
-         <nav class="flex w-fit -rotate-90 translate-y-[480%] -translate-x-[40.5%]">
+         <nav class="flex w-fit -rotate-90 translate-y-[100%] -translate-x-[40.5%]">
             {#each navElements as element}
                <a href=
                   {element.href}
