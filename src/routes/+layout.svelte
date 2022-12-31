@@ -9,8 +9,8 @@
    ];
 </script>
 
-<div class="bg-lavender-100 p-6 pl-2 h-screen">
-   <div class="flex flex-row items-start justify-start relative max-w-3xl mx-auto h-full">
+<div class="bg-lavender-100 p-6 pl-2 min-h-screen">
+   <div class="flex flex-row items-start justify-start relative max-w-3xl mx-auto">
       <div class="w-12 h-[480px] sticky top-[calc(50%-240px)]">
          <nav class="flex w-fit -rotate-90 translate-y-[100%] -translate-x-[40.5%]">
             {#each navElements as element}
@@ -26,7 +26,7 @@
             {/each}
          </nav>
       </div>
-      <div class="border-2 border-lavender-900 rounded-lg bg-lavender-200 p-8 h-fit min-h-full w-full">
+      <div class="border-2 border-lavender-900 rounded-lg bg-lavender-200 p-8 h-fit min-h-[calc(100vh-3rem)] w-full">
          <slot><!-- optional fallback --></slot>
       </div>
    </div>
