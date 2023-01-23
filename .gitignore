@@ -13,6 +13,7 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 .svelte-kit
 .svelte-kit/*
 
+.DS-Store
 # Runtime data
 pids
 *.pid
