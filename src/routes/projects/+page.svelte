@@ -1,10 +1,8 @@
 <script lang="ts">
 	import ProjectCard from './projectCard.svelte';
-	import { page } from '$app/stores';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
-	$: selectedTag = $page.url.searchParams.get('tag');
 </script>
 
 <h1 class="text-xl">My Projects</h1>
