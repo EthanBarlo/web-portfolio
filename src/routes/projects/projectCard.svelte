@@ -1,0 +1,14 @@
+<script lang="ts">
+	import Tags from '$lib/components/Tags.svelte';
+	export let data: App.ProjectData;
+</script>
+
+<a href={`/projects/${data.slug}`}>
+	<article
+		class="w-40 border-lavender-800 bg-lavender-300 hover:bg-lavender-200 transition-all border-2 rounded-md p-2 hover:scale-105 hover:border-lavender-900"
+	>
+		<h2>{data.title}</h2>
+		<p>{data.date}</p>
+		<Tags data={data.tags} />
+	</article>
+</a>
