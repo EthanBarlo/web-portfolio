@@ -3,7 +3,7 @@
 </script>
 
 <main class="font-charm">
-	<div class="flex flex-col-reverse sm:flex-row border-b-2 border-lavendar-900 overflow-hidden">
+	<div class="flex flex-col-reverse sm:flex-row border-b-2 border-lavender-900 overflow-hidden">
 		<section>
 			<h1 class="text-3xl mb-2 mt-1">Hey there!</h1>
 			<p>
@@ -17,13 +17,14 @@
 			<p>
 				Throughout this website you will find a selection of my projects and experiences that
 				showcase my skills and interest in Software Development. Although I might have a pretty
-				website, I am not a UI designer. So please excuse any oddities you may find.
+				website, I am not a designer. So please excuse any questionable design decisions you may
+				find.
 			</p>
 		</section>
 		<section>
 			<img
-				class="rounded m-auto hidden sm:block"
-				src="/images/headshot-transparent.webp"
+				class="m-auto hidden sm:block"
+				src="/images/headshot-transparent.png"
 				width="1200"
 				height="1200"
 				alt=""
@@ -31,9 +32,8 @@
 		</section>
 	</div>
 
-	<p>
-		Throughout my studies, personal projects and work, I have developed a strong understanding in
-		the following programming languages and frameworks:
+	<p class="inline">
+		I have a strong understanding of the following programming languages and frameworks:
 	</p>
 	<Tags
 		data={[

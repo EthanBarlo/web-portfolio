@@ -32,6 +32,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sendgrid/mail": "^7.7.0",
 		"@sveltejs/adapter-vercel": "^1.0.5",
 		"mdsvex": "^0.10.6",
 		"rehype-autolink-headings": "^6.1.1",
