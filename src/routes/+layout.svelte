@@ -35,7 +35,7 @@
 			</nav>
 		</section>
 		<section
-			class="border-2 border-lavender-900 rounded-lg bg-lavender-200 p-6 h-fit min-h-[60vh] w-full relative z-0"
+			class="border-2 border-lavender-900 rounded-lg p-6 bg-lavender-200 h-fit min-h-[400px] w-full relative z-0 overflow-hidden"
 		>
 			<slot><!-- optional fallback --></slot>
 		</section>

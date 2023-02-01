@@ -16,5 +16,6 @@
 <h1 class="text-2xl w-fit m-auto">{data.frontmatter.title}</h1>
 <DateDisplay data={data.frontmatter.date} class="m-auto w-fit text-sm text-lavender-600" />
 <Tags data={data.frontmatter.tags} linkTo="projects" class="w-fit m-auto mt-2" />
-
-<svelte:component this={component} />
+<div id="postContainer">
+	<svelte:component this={component} />
+</div>

@@ -9,3 +9,11 @@
 	font-style: normal;
 	font-display: swap;
 }
+
+#postContainer h2 {
+	@apply text-xl text-lavender-800;
+}
+
+#postContainer p {
+	@apply my-1;
+}
