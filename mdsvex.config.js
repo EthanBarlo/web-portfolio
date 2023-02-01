@@ -15,15 +15,7 @@ const config = defineConfig({
 		[remarkGithub, { repository: 'https://github.com/Serumz/web-portfolio.git' }],
 		remarkAbbr
 	],
-	rehypePlugins: [
-		rehypeSlug,
-		[
-			rehypeAutolinkHeadings,
-			{
-				behavior: 'wrap'
-			}
-		]
-	]
+	rehypePlugins: [rehypeSlug]
 });
 
 export default config;

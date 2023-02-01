@@ -9,7 +9,7 @@ const config = {
 
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
-	preprocess: [vitePreprocess(), mdsvex(mdsvexConfig)],
+	preprocess: [mdsvex(mdsvexConfig), vitePreprocess()],
 
 	kit: {
 		adapter: vercel({ strict: false })
