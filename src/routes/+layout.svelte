@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import SocialLinks from '$lib/components/SocialLinks.svelte';
 	import '../global.css';
 
 	const navElements = [
@@ -40,4 +41,7 @@
 			<slot><!-- optional fallback --></slot>
 		</section>
 	</div>
+	<footer class="w-fit m-auto mt-4">
+		<SocialLinks All />
+	</footer>
 </div>

@@ -15,24 +15,17 @@
 
 <ul class={`flex gap-1 flex-wrap text-sm ${extras.class || ''}`}>
 	{#each data as tag}
-		<li>
+		<li class="bg-amber-50 border border-lavender-600 py-1 px-2 rounded-full text-sm">
 			{#if linkTo === empty_string}
-				<span class="bg-amber-50 border border-lavender-600 py-1 px-2 rounded-full text-sm">
-					{tag}
-				</span>
+				{tag}
 			{:else}
-				<a
-					class="bg-amber-50 border border-lavender-600 py-1 px-2 rounded-full text-sm"
-					href={`/${linkTo}?tag=${tag}`}
-				>
+				<a href={`/${linkTo}?tag=${tag}`}>
 					{tag}
 				</a>
 			{/if}
 
 			{#if has_been_sliced}
-				<span class="bg-amber-50 border border-lavender-600 py-1 px-2 rounded-full text-sm">
-					...
-				</span>
+				...
 			{/if}
 		</li>
 	{/each}
