@@ -12,4 +12,5 @@
 	<meta property="og:site_name" content={siteTitle} />
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={description} />
+	<link href="/css/prism-theme.css" rel="stylesheet" />
 </svelte:head>
