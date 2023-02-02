@@ -18,7 +18,7 @@ published: true
 
 This project was created as part of the 'Web Development' module at Reutlingen University during my time studying abroad.
 
-I worked on this project in a team of two, with my colleague being responsible for the backend and me being responsible for the frontend.
+I worked on this project in a team of two, with my colleague being responsible for the backend while I was responsible for the frontend.
 
 <Wavy>
 
@@ -38,6 +38,8 @@ Then went on to create the HTML and CSS for the design without using Tailwind CS
 After some time working on the project and most of the pages created I came to realize that the website didn't look quite right. I had also found that I was struggling to make decisive decisions on the colours, borders and spacing of the website.
 
 Because I had used Tailwind before, I decided to experiment with it for the login and register pages. I quickly found that it was extremely fast to develop using Tailwind, and that the pages looked more professional and refined than the ones I had created using my own CSS.
+
+I quickly made the decision to switch over to Tailwind CSS for the rest of the project, and I am very happy with the decision.
 
 <Wavy>
 
