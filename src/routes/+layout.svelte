@@ -41,7 +41,8 @@
 			<slot><!-- optional fallback --></slot>
 		</section>
 	</div>
-	<footer class="w-fit m-auto mt-4">
+	<footer class="w-fit m-auto mt-4 flex flex-col justify-center items-center">
 		<SocialLinks All />
+		<a href="/CV.pdf" class="text-sm hover:underline font-charm">Download my CV</a>
 	</footer>
 </div>

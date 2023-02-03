@@ -69,6 +69,12 @@
 				title: 'Studying Software Engineering at Sheffield Hallam University',
 				description:
 					'Learning about various software development practices and methodologies. And gaining experience using a variety of technologies, focusing on all aspects of the software development lifecycle.'
+			},
+			{
+				date: 'September 2022 - February 2023',
+				title: 'Study Abroad at Reutlingen University in Germany',
+				description:
+					'Learning about German culture and language, and gaining experience working in another country. I studied modules in Cloud, Web and Distributed Systems to gain a better understanding of the software development lifecycle. Alongside this, I also worked part time at BeMoreSocial.'
 			}
 		]}
 	/>
