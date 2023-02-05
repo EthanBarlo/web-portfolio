@@ -6,7 +6,7 @@ tags:
   - Tailwind
   - HTML
 date: '2023-02-01'
-published: false
+published: true
 ---
 
 <script>
@@ -26,8 +26,7 @@ I worked on this project in a team of two, with my colleague being responsible f
 
 The following video demonstrates the key functionality of the website, as well as going through all of the pages to show what they look like.
 
-<!-- <YouTube videoId="hWGgw1K-i8Y" title="Test"/> -->
-<YouTube videoId="" title="Web-Shop Walkthrough"/>
+<YouTube videoId="SO1xvlbQRqQ" title="Web-Shop Walkthrough"/>
 </Wavy>
 
 ## Challenges
