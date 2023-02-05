@@ -1,0 +1,421 @@
+.pageSlide {
+	height: 52vw;
+	max-height: 52vw;
+}
+.HamburgerMenu.open {
+	right: 2.5vw;
+}
+/* Header -------------------------------------------------- */
+.Logo {
+	height: 40vw;
+	width: 40vw;
+	left: 30%;
+}
+.Logo h1 {
+	font-size: 33vw;
+}
+.Logo.intro {
+	transform: translate(0vh, 10vh);
+}
+.logo-Text {
+	font-size: 9vw;
+	transform: translate(1vw, 9vw);
+}
+.logo-top {
+	transform: rotate(90deg) translate(-57vw, -8%);
+}
+.logo-bottom {
+	transform: rotate(90deg) translate(-87vw, -8%);
+}
+header h2 {
+	font-size: 4vw;
+}
+/* Nav Menu ------------------------------------------------ */
+.nav {
+	width: 10vw;
+	height: 20vw;
+}
+
+/* Footer -------------------------------------------------- */
+footer {
+	height: 16vw;
+}
+footer .Logo {
+	height: 15vw;
+	width: 15vw;
+	transform: translateY(-20%);
+}
+footer .Logo h1 {
+	font-size: 12.375vw;
+}
+footer .cantor-text,
+footer .college-text {
+	transform: translate(-6%, -80%);
+}
+footer .logo-top {
+	transform: rotate(90deg) translate(-120%, -8%);
+}
+footer .logo-bottom {
+	transform: rotate(90deg) translate(-200%, -8%);
+}
+footer p {
+	font-size: 2vw;
+	color: white;
+	margin: 0;
+}
+footer .address {
+	text-align: right;
+	right: 58%;
+	top: 20%;
+}
+footer .contact {
+	left: 59%;
+	top: 15%;
+}
+/* TextBoxCircle ------------------------------------------- */
+.circleSections {
+	height: 90%;
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+.circleSections section {
+	height: fit-content;
+	font-size: 2vw;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 70%;
+	transition: all 0.6s ease-in-out;
+}
+.circleSections section:nth-child(4) {
+	position: relative;
+	left: 150%;
+	background: var(--LighterBackground);
+	color: var(--Highlight);
+}
+.circleSections section:nth-child(5) {
+	position: relative;
+	left: -50%;
+}
+.circleSections.offScreen section {
+	color: transparent;
+	background: transparent;
+}
+.circleSections.offScreen section:nth-child(1) {
+	transform: translate(-10vw, -10vw);
+}
+.circleSections.offScreen section:nth-child(2) {
+	transform: translateY(-10vw);
+}
+.circleSections.offScreen section:nth-child(3) {
+	transform: translate(2vw, -10vw);
+}
+.circleSections.offScreen section:nth-child(4) {
+	transform: translate(10vw, 10vw);
+}
+.circleSections.offScreen section:nth-child(5) {
+	transform: translate(-10vw, 10vw);
+}
+
+/* Slashed Page Content ------------------------------------ */
+.slashedPage {
+	width: 100vw;
+	height: 56.25vw;
+}
+.slashedPage .backgroundSlash {
+	width: 100%;
+	height: 100%;
+	clip-path: polygon(0 0, 30% 0, 50% 100%, 0% 100%);
+	shape-outside: polygon(0 0, 33% 0, 53% 100%, 0% 100%);
+	float: left;
+}
+/* Image Slider */
+.slashedPage .backgroundSlash .imageSlider {
+	min-width: 50%;
+}
+.slashedPage .backgroundSlash .imageSlider .slides {
+	top: -10%;
+}
+.slashedPage .backgroundSlash img {
+	width: 55vw;
+	height: 36.66vw;
+	min-width: 55vw;
+	min-height: 36.66vw;
+}
+/* Text outside Slashed element */
+.slashedPage h2 {
+	top: 5%;
+	font-size: 4.5vw;
+	width: 32%;
+	margin: 0;
+}
+.slashedPage p,
+.slashedPage h3 {
+	text-align: left;
+	left: 0.5%;
+}
+.slashedPage p {
+	font-size: 1.4vw;
+}
+.slashedPage h3 {
+	font-size: 3vw;
+}
+.slashedPage .intrduction {
+	top: 3%;
+}
+.slashedPage input {
+	left: 65%;
+}
+/* Reversed Slash Styles */
+.slashedPage.reversed h2 {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	width: 54%;
+	background-color: var(--Highlight);
+}
+.slashedPage.reversed .backgroundSlash {
+	clip-path: polygon(50% 0, 100% 0, 100% 100%, 70% 100%);
+	shape-outside: polygon(47% 0, 100% 0, 100% 100%, 67% 100%);
+	float: right;
+}
+.slashedPage.reversed .backgroundSlash .imageSlider {
+	top: 0;
+	left: 50%;
+}
+.slashedPage.reversed input {
+	left: 75%;
+	bottom: 10%;
+}
+.contactForm {
+	position: absolute;
+	width: 60%;
+	height: 100%;
+	right: 0;
+}
+.contactForm label {
+	display: inline-block;
+	flex-grow: 0.5;
+	width: 35%;
+	font-size: 2.5vw;
+	text-align: right;
+	padding-right: 6px;
+}
+.contactForm label:after {
+	content: ' -';
+}
+.contactForm .email,
+.contactForm .subject,
+.contactForm .details {
+	position: relative;
+	display: flex;
+	width: 95%;
+}
+.contactForm .email {
+	top: 7.5%;
+}
+.contactForm .subject {
+	top: 10%;
+}
+.contactForm .details {
+	top: 13%;
+}
+.contactForm .email input,
+.contactForm .subject input {
+	flex-grow: 1;
+	float: right;
+	width: 50%;
+	margin: 0;
+}
+.contactForm .email input:focus,
+.contactForm .subject input:focus {
+	width: 55%;
+}
+.details {
+	display: flex;
+}
+.contactForm .details textarea {
+	float: right;
+	height: 30vw;
+}
+.contactForm .submitBtn {
+	position: absolute;
+	width: 20vw;
+	height: 6vw;
+	font-size: 2.5vw;
+	bottom: 2%;
+	left: 50%;
+}
+.contactForm .submitBtn:hover {
+	width: 22.5vw;
+	transform: translateX(-1.5vw);
+}
+/* titleClip ----------------------------------------------- */
+.titleClip h3 {
+	position: absolute;
+	width: 100%;
+	font-size: 6vw;
+	top: 0;
+	color: white;
+	text-shadow: 4px 4px #73500a;
+}
+.titleClip .clip {
+	height: 100%;
+	clip-path: polygon(100% 100%, 100% 0, 68% 15%, 32% 15%, 0 0, 0 100%);
+}
+.titleClip .clip .blurredImage {
+	position: absolute;
+	width: 50%;
+	height: 105%;
+	float: right;
+	top: -1%;
+	right: -1%;
+	box-shadow: 0 0 8px 8px var(--LighterBackground) inset;
+}
+.titleClip .clip p {
+	width: 45%;
+	text-align: center;
+	font-size: 3vw;
+	top: 15%;
+	left: 2%;
+	padding: 1vw;
+	border-radius: 2vw;
+	background: var(--Background);
+	color: var(--Highlight);
+}
+.titleClip .clip input {
+	left: 15%;
+	bottom: 2%;
+}
+.titleClip.reversed .clip .blurredImage {
+	float: left;
+	left: -1%;
+}
+.titleClip.reversed .clip p {
+	left: 51.5%;
+	background: var(--Highlight);
+	color: var(--Background);
+}
+.titleClip.reversed .clip input {
+	left: 65%;
+}
+.clickForImage {
+	height: fit-content;
+	max-height: none;
+}
+.clickForImage ul {
+	width: 50%;
+}
+.clickForImage .hidden {
+	transform: translateX(100vw);
+	top: 30%;
+	visibility: hidden;
+}
+.clickForImage .shown {
+	top: 30%;
+	transform: translateX(50vw);
+}
+.clickForImage .image,
+.clickForImage .image img {
+	min-width: 50vw;
+	min-height: 33.125vw;
+	max-width: 50vw;
+	max-height: 33.125vw;
+}
+.clickForImage .staticImage {
+	visibility: visible;
+	right: 0;
+	top: 30%;
+}
+.detailedListField {
+	position: relative;
+	width: 80%;
+	left: 10%;
+}
+.buttonField {
+	width: 100%;
+	height: 15vw;
+}
+#LatestInfo {
+	width: 100%;
+}
+.buttonField {
+	position: relative;
+}
+.buttonField input[type='button'] {
+	position: absolute;
+	left: 65%;
+	top: 20%;
+}
+.buttonField input[type='button']:nth-child(2) {
+	left: 20%;
+}
+.detailedListField dl dt {
+	font-size: 3vw;
+	border-top: none;
+	background: transparent;
+	margin-top: 20px;
+}
+.detailedListField dl dd {
+	font-size: 1.7vw;
+}
+.rules-list {
+	height: fit-content;
+}
+.courseTable table {
+	width: 70%;
+	margin: auto;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+}
+.courseTable.pageSlide {
+	height: fit-content;
+	max-height: none;
+}
+.courseTable tr {
+	font-size: 1.5vw;
+}
+/* Input - Button Styles ----------------------------------- */
+input[type='button'] {
+	position: absolute;
+	width: 20vw;
+	height: 6vw;
+	border-radius: 5vw;
+	font-size: 2.5vw;
+	cursor: pointer;
+}
+input[type='button']:hover {
+	width: 22.5vw;
+	transform: translateX(-1.5vw);
+}
+/* --------------------------------------------------------- */
+/* Specific Styles ----------------------------------------- */
+
+/* Home Page ----------------------------------------------- */
+#workWithBusinesses input {
+	left: 10%;
+}
+#Design .blurredImage {
+	background-image: url('../images/reflective-windows.jpg');
+}
+/* Courses Page -------------------------------------------- */
+#DesignInfo p,
+#DesignInfo h3 {
+	font-size: 2.5vw;
+}
+#ComputingInfo p,
+#ComputingInfo h3 {
+	font-size: 2vw;
+	top: 15%;
+}
+/* latest Info --------------------------------------------- */
+#learnResourceLink {
+	position: relative;
+	font-size: 2vw;
+	width: 40%;
+	left: 30%;
+}
+/* Learnign Resource --------------------------------------- */
+#rules {
+	height: fit-content;
+	max-height: none;
+}

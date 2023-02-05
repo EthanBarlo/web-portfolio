@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Courses</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css\mobile.css" />
+		<link rel="stylesheet" media="only screen and (min-width:720px)" href="css\desktop.css" />
+	</head>
+	<body>
+		<header>
+			<div class="Logo">
+				<ul class="logo-Text">
+					<li class="cantor-text">CANTOR</li>
+					<li class="college-text">COLLEGE</li>
+				</ul>
+				<h1 class="logo-top">{</h1>
+				<h1 class="logo-bottom">}</h1>
+			</div>
+			<h2 class="title">Design & Computing<br />Course Info</h2>
+		</header>
+		<div class="HamburgerMenu">
+			<p class="top"></p>
+			<p class="middle"></p>
+			<p class="bottom"></p>
+		</div>
+		<nav>
+			<div class="circleWrap"></div>
+			<div class="pages">
+				<a href="index.html">Home</a>
+				<a class="current" href="courses.html">Courses</a>
+				<a href="facilities.html">Facilities</a>
+				<a href="contact-us.html">Contact Us</a>
+				<a href="latest-info.html">Latest Info</a>
+			</div>
+		</nav>
+		<!-- PLACE PAGE CONTENT HERE -->
+		<div id="DesignInfo" class="slashedPage">
+			<div class="backgroundSlash">
+				<h2>Design<br />Course</h2>
+				<div class="imageSlider">
+					<div class="slides">
+						<img src="images\atrium-2.jpg" alt="Atrium looking at the entrence" />
+						<img src="images\atrium-3.jpg" alt="Atrium Sofas" />
+						<img src="images\network-lab.jpeg" alt="Specialist network lab for student use" />
+						<img src="images\reflective-windows-rotated.jpg" alt="" />
+						<img src="images\group-talk.jpeg" alt="Group Discussion" />
+						<img src="images\building-side.jpeg" alt="" />
+					</div>
+				</div>
+			</div>
+			<p class="intrduction">
+				The College has two main practice based programmes of study in Visual Communications and
+				Three-Dimensional Design, a Masters Degree programme of study and contributes to a Combined
+				Honours Programme.
+			</p>
+			<h3>
+				The College is committed to ‘Creative Thinking’ in Visual Communication and ‘Intelligent
+				Making’ in Three-Dimensional Design. These philosophies emphasise the importance given to
+				the development of innovative solutions to design problems and also the craft skills in
+				making.
+			</h3>
+			<input
+				onclick="location.href = 'design-course.html#AvaliableCourses';"
+				type="button"
+				value="View Courses"
+			/>
+		</div>
+		<div id="ComputingInfo" class="slashedPage reversed">
+			<h2>Computing<br />Course</h2>
+			<div class="backgroundSlash">
+				<div class="imageSlider">
+					<div class="slides">
+						<img src="images\game-lab-2.jpg" alt="View of the lecture theatre seats" />
+						<img src="images\group-talk-2.jpeg" alt="Students working as a group" />
+						<img src="images\group-work.jpeg" alt="Students working as a group on a project" />
+						<img src="images\lecture-theatre2.png" alt="View of the lecture theatre seats" />
+						<img src="images\atrium-2.jpg" alt="Atrium looking at the entrence" />
+					</div>
+				</div>
+			</div>
+			<p class="intrduction">
+				The College offers a range of courses to suit applicants with varying backgrounds and
+				educational abilities. At undergraduate level, there are single BSc Honours Degree courses
+				in Computing, Business Computing, Software Engineering and Information Systems Design.
+			</p>
+			<h3>
+				Computing is also a subject offered on the Combined Honours Programme. Higher National
+				Diploma and Certificate courses are available in Business Information Technology and
+				Computing. Students taking up the HND in Computing can specialise in either Business
+				Computing, Software Engineering or Information Systems Design.
+			</h3>
+			<p>
+				The courses are British Computer Society accredited astund are highly relevant to modern
+				industry. They are designed to prepare students for professional occupations in Computing
+				and related fields. Many graduates continue their studies to pursue a higher degree such as
+				an MSc. or PhD.
+			</p>
+			<input
+				onclick="location.href = 'computing-course.html#AvaliableCourses';"
+				type="button"
+				value="View Courses"
+			/>
+		</div>
+		<footer>
+			<div class="Logo">
+				<ul class="logo-Text">
+					<li class="cantor-text">CANTOR</li>
+					<li class="college-text">COLLEGE</li>
+				</ul>
+				<h1 class="logo-top">{</h1>
+				<h1 class="logo-bottom">}</h1>
+			</div>
+			<p class="address">Cantor College<br />Main Street<br />Sheffield<br />SC4 2BB</p>
+			<p class="contact">
+				Tel:(01321) 2340 235<br />Fax: (01321) 2340 236<br />Email: info@cantorcollege.ac.uk
+			</p>
+		</footer>
+		<script src="js\imageSlider.js"></script>
+		<script src="js\navMenu.js"></script>
+	</body>
+</html>

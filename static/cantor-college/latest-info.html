@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latest Info</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css\mobile.css" />
+    <link rel="stylesheet" media="only screen and (min-width:720px)" href="css\desktop.css">
+</head>
+<body>
+    <header>
+        <div class="Logo">
+          <ul class="logo-Text">
+            <li class="cantor-text">CANTOR</li>
+            <li class="college-text">COLLEGE</li>
+          </ul>
+          <h1 class="logo-top">{</h1>
+          <h1 class="logo-bottom">}</h1>
+        </div>
+        <h2 class="title">Latest<br />Infomation</h2>
+      </header>
+      <div class="HamburgerMenu">
+        <p class="top"></p>
+        <p class="middle"></p>
+        <p class="bottom"></p>
+      </div>
+      <nav>
+        <div class="circleWrap"></div>
+        <div class="pages">
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="contact-us.html">Contact Us</a>
+          <a class="current" href="latest-info.html">Latest Info</a>
+        </div>
+      </nav>
+      <div id="LatestInfo">
+        <div class="buttonField">
+          <h2>Click button to view Information</h2>
+          <input type="button" value="Student Information" id="studentInfoBtn" class="clickable">
+          <input type="button" value="Staff Information" id="staffInfoBtn" class="clickable">
+        </div>
+        <div id="StudentInfo" class="detailedListField hidden">
+          <h2>Information for Students</h2>
+          <input type="button" onclick="location.href = 'learning-resources.html';" value="Go to Learning Resources" id="learnResourceLink">
+            <dl>
+              <dt>Academic Information
+                <dd>Faculties - Links to all the Faculty and Departmental Offices with information on staff, courses and events.</dd>
+                <dd>A to Z List of Departments - Departmental Homepages.</dd>
+                <dd>Library and Learning Resource Services - Information on LLRS services, access to the on-line catalogue, links to external academic resources and guides to using IT to support your studies.</dd>
+                <dd>Our Academic Partners - Information on College links.</dd>
+                <dd>Research - links to the Research Centres, guide to research opportunities and help on finding research funding.</dd>
+              </dt>
+              <dt>Administrative Support
+                <dd>Academic Registry - Information provided by the Academic Registry, including Academic Calendars, Academic Regulations, Module Catalogue, information on award ceremonies and tuition fees.</dd>
+                <dd>Student Guide to Regulations - General and Academic Regulations, World Wide Web Code of Practice, Rules Governing the Use of LLRS facilities.</dd>
+              </dt>
+              <dt>Student Services
+                <dd>Advisory and Counselling Centre - academic advice, help for international students, careers guidance, personal counselling, student loans and access funds and support for students with disabilities/learning difficulties.</dd>
+                <dd>Health Centre - guide to the services provided by the University Health Centre.</dd>
+                <dd>Multi-Faith Centre - information regarding the work of the Multi-Faith Centre.</dd>
+                <dd>Pre-School Centre - contact information regarding the University's child care facilities.</dd>
+                <dd>Sports Centre - booking arrangements and facilities.</dd>
+              </dt>
+              <dt>University Services
+                <dd>Catering Services - guide to the catering facilities on campus.</dd>
+                <dd>Printing Services - information regarding services provided for students.</dd>
+                <dd>Student Accommodation Services - guide to University Accommodation and help on finding accommodation in the private sector.</dd>
+              </dt>
+              <dt>Life at the University
+                <dd>Arts Centre - what's on at the University's arts venues.</dd>
+                <dd>Students' Union - events and services provided by the Students' Union.</dd>
+                <dd>University Guide - a full guide to life at the University.</dd>
+                <dd>Campus Navigator - help with finding your way around campus.</dd>
+              </dt>
+              <dt>Communications
+                <dd>Noticeboards - General, Classified, Events and Alumni noticeboards.</dd>
+                <dd>Student Email Search - database of student email addresses.</dd>
+                <dd>Staff Search - database of staff email addresses.</dd>
+                <dd>A to Z List of Services - full A to Z list of University Services.</dd>
+              </dt>
+            </dl>
+        </div>
+        <div id="StaffInfo" class="detailedListField hidden">
+          <h2>Information for Staff</h2>
+          <dl>
+            <dt>News
+              <dd>Cantor College recently hosted the Software Engineering student of the year awards. Shortlisted candidates from around the country attended the one day event.</dd>
+            </dt>
+            <dt>Academic Registry
+              <dd>For academic regulations, assessment, awards, student records and course validation.</dd>
+            </dt>
+            <dt>Catering Services
+              <dd>Contact the Catering Services regarding on and off-site catering.</dd>
+            </dt>
+            <dt>Financial Services
+              <dd>The financial team based on the 2nd Floor are responsible for all areas of student finance as
+                well as College budgeting.</dd>
+            </dt>
+            <dt>Information Systems Service
+              <dd>The ISS team delivers the College’s computing facilities including all hardware and software.
+                They also run the staff helpdesk.</dd>
+            </dt>
+            <dt>Marketing Services
+              <dd>The Marketing Team will help promote events and new courses. They will help with press
+                release preparation.</dd>
+            </dt>
+            <dt>Personnel Services
+              <dd>All staff pay and conditions enquiries should be directed to the Personnel Services team on
+                the 3rd floor.</dd>
+            </dt>
+            <dt>Facilities
+              <dd>The facilities are responsible for the general care and maintenance of the College. All
+                enquiries via the main helpdesk.</dd>
+            </dt>
+          </dl>
+        </div>
+      </div>
+      <footer>
+        <div class="Logo">
+          <ul class="logo-Text">
+            <li class="cantor-text">CANTOR</li>
+            <li class="college-text">COLLEGE</li>
+          </ul>
+          <h1 class="logo-top">{</h1>
+          <h1 class="logo-bottom">}</h1>
+        </div>
+        <p class="address">Cantor College<br />Main Street<br />Sheffield<br />SC4 2BB</p>
+        <p class="contact">Tel:(01321) 2340 235<br />Fax:
+          (01321) 2340 236<br />Email: info@cantorcollege.ac.uk
+        </p>
+      </footer>
+    <script src="js\clickShow.js"></script>
+    <script src="js\navMenu.js"></script>
+</body>
+</html>

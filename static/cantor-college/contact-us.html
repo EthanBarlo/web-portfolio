@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Us</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css\mobile.css" />
+		<link rel="stylesheet" media="only screen and (min-width:720px)" href="css\desktop.css" />
+	</head>
+	<body>
+		<header>
+			<div class="Logo">
+				<ul class="logo-Text">
+					<li class="cantor-text">CANTOR</li>
+					<li class="college-text">COLLEGE</li>
+				</ul>
+				<h1 class="logo-top">{</h1>
+				<h1 class="logo-bottom">}</h1>
+			</div>
+			<h2 class="title">Contact<br />Us</h2>
+		</header>
+		<div class="HamburgerMenu">
+			<p class="top"></p>
+			<p class="middle"></p>
+			<p class="bottom"></p>
+		</div>
+		<nav>
+			<div class="pages">
+				<a href="index.html">Home</a>
+				<a href="courses.html">Courses</a>
+				<a href="facilities.html">Facilities</a>
+				<a class="current" href="contact-us.html">Contact Us</a>
+				<a href="latest-info.html">Latest Info</a>
+			</div>
+		</nav>
+		<div id="contactSlide" class="pageSlide slashedPage">
+			<div class="backgroundSlash">
+				<h2>Contact<br />Form</h2>
+				<div class="imageSlider">
+					<div class="slides">
+						<img src="images\atrium-3.jpg" alt="Atrium looking at the entrence" />
+						<img src="images\group-talk.jpeg" alt="Group Discussion" />
+						<img src="images\group-talk-2.jpeg" alt="Group Discussion in a meeting room" />
+						<img src="images\group-work.jpeg" alt="Students working as a group" />
+					</div>
+				</div>
+			</div>
+			<form class="contactForm">
+				<div class="email">
+					<label for="emailInput" class="emailText">Contact Email</label>
+					<input id="emailInput" type="email" name="email" class="emailBox" />
+				</div>
+				<div class="subject">
+					<label for="subjectInput" class="subjectText">Subject</label>
+					<input id="subjectInput" type="text" name="subject" class="subjectBox" />
+				</div>
+				<div class="details">
+					<label for="detailsInput" class="detailsText">Details</label>
+					<textarea id="detailsInput" name="details" cols="60" rows="13"></textarea>
+				</div>
+				<input type="submit" value="Submit" class="submitBtn" />
+			</form>
+		</div>
+		<footer>
+			<div class="Logo">
+				<ul class="logo-Text">
+					<li class="cantor-text">CANTOR</li>
+					<li class="college-text">COLLEGE</li>
+				</ul>
+				<h1 class="logo-top">{</h1>
+				<h1 class="logo-bottom">}</h1>
+			</div>
+			<p class="address">Cantor College<br />Main Street<br />Sheffield<br />SC4 2BB</p>
+			<p class="contact">
+				Tel:(01321) 2340 235<br />Fax: (01321) 2340 236<br />Email: info@cantorcollege.ac.uk
+			</p>
+		</footer>
+		<script src="js\imageSlider.js"></script>
+		<script src="js\navMenu.js"></script>
+	</body>
+</html>

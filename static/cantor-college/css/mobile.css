@@ -1,0 +1,625 @@
+/* CSS Variables for easy color changing ------------------- */
+:root {
+	--Background: #523e15;
+	--LighterBackground: #7b5c1f;
+	--Highlight: #f3a915;
+	--DarkerHighlight: #8c6009;
+}
+/* Page Background ----------------------------------------- */
+html {
+	max-width: 100vw;
+}
+body {
+	position: absolute;
+	background-color: var(--Background);
+	max-width: 100vw;
+	margin: 0%;
+}
+body::-webkit-scrollbar {
+	display: none;
+}
+h1,
+h2,
+h3,
+p,
+div,
+input {
+	font-family: 'Raleway', sans-serif;
+	color: white;
+}
+div,
+header,
+footer {
+	float: left;
+}
+.pageSlide {
+	position: relative;
+	width: 100vw;
+}
+h2 {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	font-size: 50px;
+	text-align: center;
+	background: var(--Highlight);
+	text-shadow: 4px 4px #73500a;
+}
+/* Nav Menu ------------------------------------------------ */
+.HamburgerMenu {
+	position: fixed;
+	cursor: pointer;
+	width: 55px;
+	top: 2vw;
+	right: 2vw;
+	z-index: 10;
+	height: fit-content;
+	margin-top: auto;
+	margin-bottom: auto;
+	visibility: visible;
+	transition: all 0.5s ease-in-out;
+}
+.HamburgerMenu p {
+	content: ' ';
+	width: 50px;
+	height: 6px;
+	background: white;
+	border-radius: 6px;
+	transition: all 0.5s ease-in-out;
+}
+.HamburgerMenu p.middle {
+	background: var(--Highlight);
+}
+.HamburgerMenu.open {
+	right: 4vw;
+}
+.HamburgerMenu.open p.top {
+	transform: rotate(-45deg) translate(-15px, 16px);
+}
+.HamburgerMenu.open p.middle {
+	transform: translateX(80px);
+	background: transparent;
+}
+.HamburgerMenu.open p.bottom {
+	transform: rotate(45deg) translate(-15px, -16px);
+}
+
+nav {
+	position: fixed;
+	z-index: 3;
+	height: 400px;
+	width: 250px;
+	background-color: var(--Background);
+	border-style: solid;
+	border-color: var(--Highlight);
+	border-radius: 50px;
+	top: 2vw;
+	right: 2vw;
+	overflow: hidden;
+	clip-path: circle(0% at 87.5% 10%);
+	transition: all 0.6s ease-in-out;
+}
+nav .pages {
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	bottom: 0;
+	text-align: center;
+}
+nav a {
+	display: block;
+	text-decoration: inherit;
+	width: 100%;
+	height: 20%;
+	font-size: 30px;
+	color: white;
+	border-top: 2px solid var(--Highlight);
+}
+nav a.current {
+	color: var(--Highlight);
+}
+nav.open {
+	clip-path: circle(100% at 50% 50%);
+}
+/* HomePage Header Styles ---------------------------------- */
+header {
+	position: relative;
+	width: 100vw;
+	height: 50vw;
+	min-height: 330px;
+	transition: all 1.35s ease-in-out;
+	overflow: hidden;
+}
+/* Header - Logo Styles ------------------- */
+.Logo {
+	position: absolute;
+	height: 250px;
+	width: 250px;
+	left: 15%;
+	transition: all 1s ease-in-out;
+}
+/* Top-Bottom Container */
+.Logo h1 {
+	position: relative;
+	height: fit-content;
+	font-size: 200px;
+	color: var(--Highlight);
+	font-family: none;
+	text-align: center;
+}
+.logo-top {
+	transform: rotate(90deg) translate(-130%, -8%);
+}
+.logo-bottom {
+	transform: rotate(90deg) translate(-205%, -8%);
+}
+/* Logo Text */
+.logo-Text {
+	position: relative;
+	margin-top: auto;
+	margin-bottom: auto;
+	display: inline;
+}
+.logo-Text {
+	list-style: none;
+	display: inline-block;
+	width: 100%;
+	padding: 0px;
+	font-size: 50px;
+	transform: translate(0px, 60px);
+}
+.logo-Text li {
+	text-align: center;
+	width: 100%;
+	height: fit-content;
+	transform: translateY(10px);
+}
+.cantor-text {
+	color: var(--Highlight);
+}
+.college-text {
+	color: white;
+	transition: all 0.2s;
+}
+.college-text.hidden {
+	color: transparent;
+}
+
+/* Load Animation */
+header.intro {
+	width: 100vw;
+	height: 100vh;
+}
+.Logo.intro {
+	transform: translate(2vw, 30vh);
+}
+header h2.intro {
+	transform: translateY(30vh);
+}
+.HamburgerMenu.intro {
+	transform: translateX(20vw);
+}
+
+/* Page Identifier Style ---------------------*/
+header h2 {
+	position: absolute;
+	font-size: 30px;
+	visibility: visible;
+	background: transparent;
+	transition: all 1.5s ease-in-out;
+	bottom: 2%;
+}
+/* Image Slider Styles ------------------------------------- */
+.imageSlider {
+	position: relative;
+	overflow: hidden;
+	max-height: 75vw;
+	max-width: 50vw;
+} /* 3:2 aspect ratio */
+/* Slides */
+.imageSlider .slides {
+	display: flex;
+	transition: all 0.5s ease-in-out;
+}
+.imageSlider img {
+	max-height: 75vw;
+	max-width: 50vw;
+}
+/* TextBoxCircle ------------------------------------------- */
+.circleSections section,
+.detailedListField dl dd {
+	width: 80%;
+	margin: auto;
+	border-radius: 15px;
+	font-size: 21px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	background-color: var(--LighterBackground);
+	color: var(--Highlight);
+}
+.circleSections section:nth-child(2n),
+.detailedListField dd:nth-child(2n) {
+	background-color: var(--Highlight);
+	color: var(--Background);
+}
+/* Buttons ------------------------------------------------- */
+input[type='button'],
+input[type='submit'] {
+	position: relative;
+	width: 160px;
+	height: 60px;
+	margin-bottom: 2%;
+	left: 30%;
+	bottom: 0;
+	font-size: 22px;
+	font-weight: 1000;
+	border-style: none;
+	border-radius: 100px;
+	transition: all 0.3s ease-in-out;
+}
+input[type='button']:hover,
+input[type='submit']:hover {
+	width: 200px;
+	transform: translate(-20px);
+}
+
+/* Slashed Page -------------------------------------------- */
+.slashedPage {
+	position: relative;
+	background: var(--LighterBackground);
+	height: fit-content;
+}
+.slashedPage .backgroundSlash {
+	position: relative;
+	width: 100%;
+	height: 99vw;
+	background: var(--Highlight);
+}
+.backgroundSlash h2 {
+	position: relative;
+	margin: 0;
+	width: 100%;
+	font-weight: 1000;
+	font-size: 50px;
+	text-align: center;
+}
+.backgroundSlash .imageSlider {
+	position: absolute;
+	bottom: 0;
+	min-width: 100vw;
+}
+.backgroundSlash .imageSlider img {
+	min-width: 100vw;
+	height: 66.6vw;
+}
+.slashedPage p,
+.slashedPage h3 {
+	position: relative;
+	font-size: 21px;
+	width: 90%;
+	left: 5%;
+}
+.slashedPage h3 {
+	color: var(--Highlight);
+}
+.slashedPage.reversed h2 {
+	position: absolute;
+	z-index: 2;
+}
+.slashedPage input {
+	background: var(--Highlight);
+	color: var(--Background);
+}
+.contactForm,
+.contactForm div {
+	position: relative;
+	width: 100%;
+}
+label {
+	display: block;
+	background: transparent;
+	font-size: 30px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.contactForm .email input,
+.contactForm .subject input,
+.contactForm .details textarea {
+	display: block;
+	font-size: 23px;
+	width: 70%;
+	color: white;
+	background: var(--Background);
+	border-radius: 30px;
+	border-style: solid;
+	border-color: var(--Highlight);
+	padding: 5px;
+	margin: auto;
+	transition: all 0.5s ease-in-out;
+}
+.contactForm .email input:focus,
+.contactForm .subject input:focus {
+	width: 85%;
+}
+.contactForm .submitBtn {
+	left: 28%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: var(--Highlight);
+	color: var(--Background);
+}
+.titleClip {
+	background: var(--Highlight);
+}
+.titleClip h3 {
+	position: relative;
+	margin: 0;
+	top: 2.5%;
+	left: -1%;
+	text-shadow: 4px 4px #73500a;
+	text-align: center;
+	font-size: 40px;
+}
+.titleClip .clip {
+	position: relative;
+	height: 90%;
+	background: var(--LighterBackground);
+	clip-path: polygon(100% 100%, 100% 0, 70% 7%, 30% 7%, 0 0, 0 100%);
+}
+.titleClip .clip .blurredImage {
+	position: relative;
+	width: 100vw;
+	height: 56.25vw;
+	background-size: cover;
+}
+.titleClip p {
+	position: relative;
+	top: 2%;
+	font-size: 21px;
+}
+.line-seperator {
+	width: 100%;
+	height: 10px;
+	background: var(--Highlight);
+}
+
+.clickForImage {
+	width: 100%;
+	background: var(--LighterBackground);
+}
+.clickForImage p {
+	font-size: 21px;
+}
+.clickForImage ul {
+	padding: 0;
+	height: 1000px;
+	display: grid;
+}
+.clickForImage ul li {
+	font-size: 23px;
+	list-style: none;
+	background: var(--Background);
+	color: var(--Highlight);
+	width: 100%;
+	text-align: center;
+}
+.clickForImage .clickable {
+	background: var(--Highlight);
+	color: var(--Background);
+	cursor: pointer;
+	font-weight: 1000;
+}
+.clickForImage .hidden {
+	position: absolute;
+	transform: translateX(-100vw);
+	width: 100vw;
+	height: 66.25vw;
+	z-index: 4;
+	transition: all 0.6s ease-in-out;
+}
+.clickForImage .shown {
+	position: absolute;
+	transform: translateX(0vw);
+	transition: all 0.6s ease-in-out;
+}
+.clickForImage .image,
+.clickForImage .image img {
+	min-width: 100vw;
+	min-height: 56.25vw;
+	max-width: 100vw;
+	max-height: 56.25vw;
+}
+.clickForImage .image {
+	position: relative;
+}
+.clickForImage .helpMessage {
+	text-align: center;
+	font-size: 25px;
+}
+.clickForImage .staticImage {
+	position: absolute;
+	visibility: hidden;
+	min-width: 50vw;
+	min-height: 33.125vw;
+	max-width: 50vw;
+	max-height: 33.125vw;
+}
+.detailedListField dl {
+	margin: 0;
+}
+.detailedListField dl dt {
+	width: 100%;
+	height: fit-content;
+	font-size: 30px;
+	background: var(--Background);
+	text-shadow: 2px 2px #73500a;
+	border-top: 10px solid var(--Highlight);
+	text-align: center;
+}
+.buttonField input[type='button'] {
+	left: 0;
+	width: 230px;
+	font-size: 20px;
+	display: block;
+	margin: auto;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	background: var(--LighterBackground);
+	color: var(--Highlight);
+}
+.buttonField input[type='button']:hover {
+	transform: translateX(0);
+	width: 270px;
+}
+.buttonField input[type='button']:nth-child(2) {
+	background: var(--Highlight);
+	color: var(--Background);
+}
+.detailedListField.hidden {
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+}
+.detailedListField.hidden h2,
+.detailedListField.hidden dt,
+.detailedListField.hidden dd {
+	font-size: 0;
+	width: 0;
+	height: 0;
+}
+.detailedListField.shown {
+	height: fit-content;
+	visibility: visible;
+	border: 5px solid var(--Highlight);
+	border-radius: 15px;
+}
+.introduction-text,
+.rules-list {
+	background: var(--LighterBackground);
+}
+.introduction-text h3 {
+	font-size: 30px;
+	color: var(--Highlight);
+	text-align: center;
+}
+.introduction-text p {
+	font-size: 20px;
+}
+.rules-list dt {
+	font-size: 30px;
+	color: var(--Highlight);
+}
+.rules-list dd {
+	font-size: 20px;
+	margin: 15px;
+}
+.rules-list dd:nth-child(6) {
+	color: coral;
+}
+.courseTable {
+	background: var(--LighterBackground);
+	text-align: center;
+}
+.courseTable tr {
+	height: 70px;
+}
+.courseTable th {
+	width: 33vw;
+}
+.courseTable tr:nth-child(1) th {
+	background-color: var(--Highlight);
+	color: var(--Background);
+	border: 2px solid var(--Background);
+}
+.courseTable table,
+.courseTable tr,
+.courseTable th {
+	border: 2px solid var(--Highlight);
+	border-collapse: collapse;
+}
+/* Footer -------------------------------------------------- */
+footer {
+	position: relative;
+	width: 100%;
+	min-width: 350px;
+	height: 120px;
+}
+footer .Logo {
+	position: absolute;
+	left: 42.5%;
+	height: 110px;
+	width: 110px;
+	top: 0;
+	transform: translate(-6%, -20%);
+}
+footer .Logo h1 {
+	font-size: 70px;
+}
+footer .cantor-text,
+footer .college-text {
+	transform: translate(-0%, -50%);
+	font-size: 35%;
+}
+footer .logo-top {
+	transform: rotate(90deg) translate(-80%, -8%);
+}
+footer .logo-bottom {
+	transform: rotate(90deg) translate(-140%, -8%);
+}
+footer p {
+	font-size: 16px;
+	color: white;
+	margin: 0;
+}
+footer .address {
+	position: absolute;
+	right: 2%;
+	top: 17%;
+}
+footer .contact {
+	position: absolute;
+	line-height: 200%;
+	left: 1%;
+	bottom: 5%;
+}
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+
+/* Specitic Styles------------------------------------------ */
+
+/* Home Page ----------------------------------------------- */
+#Design .blurredImage {
+	background-image: url('../images/reflective-windows-rotated.jpg');
+}
+#Computing .blurredImage {
+	background-image: url('../images/game-lab.jpg');
+}
+#Design input {
+	background: var(--Highlight);
+	color: var(--Background);
+}
+#Computing input {
+	background: var(--Background);
+	color: var(--Highlight);
+}
+/* Courses Page -------------------------------------------- */
+#DesignInfo input {
+	background: var(--Highlight);
+	color: var(--Background);
+}
+#ComputingInfo input {
+	background: var(--Background);
+	color: var(--Highlight);
+}
+/* Specitic Styles------------------------------------------ */
+/* latest Info --------------------------------------------- */
+#learnResourceLink {
+	width: 290px;
+	margin-top: 10px;
+	left: 10%;
+	background: var(--Highlight);
+	color: var(--Background);
+	transition: none;
+}
