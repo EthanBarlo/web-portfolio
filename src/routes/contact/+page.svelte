@@ -20,7 +20,7 @@
 				type="text"
 				name="name"
 				bind:value={name}
-				class="bg-lavender-100 rounded-lg p-1 border-lavender-600 border focus:border-2 focus:outline-none"
+				class="bg-lavender-100 rounded-lg p-1 border-lavender-600 border focus:border-2 focus:outline-none font-sans text-sm"
 			/>
 		</label>
 		<label class="flex flex-col gap-1 w-full"
@@ -29,7 +29,7 @@
 				type="email"
 				name="email"
 				bind:value={email}
-				class="bg-lavender-100 rounded-lg p-1 border-lavender-600 border focus:border-2 focus:outline-none"
+				class="bg-lavender-100 rounded-lg p-1 border-lavender-600 border focus:border-2 focus:outline-none font-sans text-sm"
 			/>
 		</label>
 		<label class="flex flex-col gap-1 w-full"
@@ -37,7 +37,7 @@
 			<textarea
 				name="message"
 				bind:value={message}
-				class="bg-lavender-100 rounded-lg p-1 border-lavender-600 border focus:border-2 focus:outline-none"
+				class="bg-lavender-100 rounded-lg p-1 border-lavender-600 border focus:border-2 focus:outline-none font-sans text-sm"
 			/>
 		</label>
 		<button
